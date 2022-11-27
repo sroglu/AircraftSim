@@ -1,0 +1,756 @@
+{
+    "name": "InputActions",
+    "maps": [
+        {
+            "name": "AircraftInputs_Development",
+            "id": "da1bc7a7-e6ce-484e-8359-6710fa2f01b0",
+            "actions": [
+                {
+                    "name": "StickUpdate",
+                    "type": "Value",
+                    "id": "fba89bba-2cfd-4e4b-a7e7-42de57f45ad9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ThrottleUpdate",
+                    "type": "Value",
+                    "id": "e8d7f030-0925-4257-8fab-9a301513b112",
+                    "expectedControlType": "Axis",
+                    "processors": "Invert",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RudderUpdate",
+                    "type": "Value",
+                    "id": "7f1eb51d-9ecb-4f39-9aa7-17c74359a1d2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftBrake",
+                    "type": "Value",
+                    "id": "5d805374-2cc1-47a4-bf17-077d2aa93567",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightBrake",
+                    "type": "Value",
+                    "id": "6db0e018-2fec-4d04-9892-252ea325e128",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ResetPress",
+                    "type": "Button",
+                    "id": "e86d40e7-056b-44b4-a9e4-32fa5ed68184",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SetGround",
+                    "type": "Button",
+                    "id": "bc1693a8-939e-4ba2-9c14-000448aa01f4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SetAir",
+                    "type": "Button",
+                    "id": "0baef9de-ea30-4120-9d9e-38a85948cbaa",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AISwitch",
+                    "type": "Button",
+                    "id": "2cba91a6-6542-4fb2-9780-a7ff60dfba47",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Fire",
+                    "type": "Button",
+                    "id": "60b223db-8cfb-4fa8-8408-f63e7436ee72",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseFlare",
+                    "type": "Button",
+                    "id": "77454359-c039-47c3-ab30-c18637a08806",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "UseChaff",
+                    "type": "Button",
+                    "id": "52294408-9f17-40a3-9342-36d8e4c16309",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CursorMovement",
+                    "type": "PassThrough",
+                    "id": "13efc810-9f72-49d2-a6ee-7d3e1dfecfc5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DMS_TMS_Movement",
+                    "type": "PassThrough",
+                    "id": "378aceec-fe0d-4763-93c7-4932e299012c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "40e813b2-a0e0-4a43-9f16-6b934418dd8b",
+                    "path": "<HID::Thustmaster Joystick - HOTAS Warthog>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "StickUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "713cc5a2-0502-4e7f-aaa9-c6816c998414",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "InvertVector2(invertX=false)",
+                    "groups": "",
+                    "action": "StickUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84d55b6f-aeb8-425d-b7da-e4d8b8d85c1c",
+                    "path": "<HID::Thustmaster Joystick - HOTAS Warthog>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "ResetPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b7452af-b098-4932-a9cb-f67c860364c6",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9443e7ca-e13f-432b-83ec-c0306afb9a44",
+                    "path": "<ThrustmasterRudderHID>/Rudder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "RudderUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c3862ed-ac1f-4a08-9c58-6d323d5d8477",
+                    "path": "<HID::Thrustmaster T.16000M>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RudderUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "425390d8-90de-4250-af3b-2e8f51d229f8",
+                    "path": "<ThrustmasterRudderHID>/LeftBrake",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "LeftBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8034180c-7489-4d9c-8ffc-0040ba864cef",
+                    "path": "<ThrustmasterRudderHID>/RightBrake",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "RightBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c41b5c23-0c21-4804-8c98-b4a768395c50",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetGround",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0e9653dc-942b-4bcc-ab34-f82d521293f2",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetAir",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "23896872-ca25-44d6-8770-a37a74c05ea9",
+                    "path": "<HID::Thrustmaster T.16000M>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AISwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed974951-fd9f-4bfa-a774-d9034f7f3571",
+                    "path": "<HID::Thrustmaster T.16000M>/slider",
+                    "interactions": "",
+                    "processors": "Normalize(min=1,max=-1,zero=1),Invert",
+                    "groups": "HOTAS and KM",
+                    "action": "ThrottleUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "597f972c-04ef-4c75-8542-0f0295925437",
+                    "path": "<HID::Thrustmaster T.16000M>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b8a7944-daf6-42eb-8cc0-edfd8b7157ed",
+                    "path": "<HID::Thrustmaster T.16000M>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseFlare",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "04003a5e-d91f-46a7-9a57-545816e65022",
+                    "path": "<HID::Thrustmaster T.16000M>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UseChaff",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "d70a6a6a-6a0f-4c91-bbde-60f8dd5fc076",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CursorMovement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "f4a9b59a-e4ee-4e03-917e-7f06d389da88",
+                    "path": "<HID::Thrustmaster T.16000M>/hat/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "CursorMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "2903c2b3-b133-487a-9585-96ec6d241365",
+                    "path": "<HID::Thrustmaster T.16000M>/hat/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "CursorMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "07b847e0-0a2b-40f2-9747-8a3e427806ea",
+                    "path": "<HID::Thrustmaster T.16000M>/hat/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "CursorMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "6b835115-4cfb-48c6-a6e7-7546e2caea04",
+                    "path": "<HID::Thrustmaster T.16000M>/hat/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "CursorMovement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "95cc68e8-2048-4f42-87d6-b4d2655920d8",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DMS_TMS_Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "1390050d-56de-40e9-9495-9ed1873351af",
+                    "path": "<HID::Thrustmaster T.16000M>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "DMS_TMS_Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "9658fd74-260d-4491-b8a9-df357dba8e32",
+                    "path": "<HID::Thrustmaster T.16000M>/button10",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "DMS_TMS_Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "bf312a23-b45b-4b7e-91e2-8666a80eefce",
+                    "path": "<HID::Thrustmaster T.16000M>/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "DMS_TMS_Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "3b97c3d4-db1d-4ae9-97ca-d14957a759ff",
+                    "path": "<HID::Thrustmaster T.16000M>/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "DMS_TMS_Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "AircraftInputs_Development_old",
+            "id": "bac6a7a1-5fa4-4cb8-8c6e-b84219af8bc9",
+            "actions": [
+                {
+                    "name": "StickUpdate",
+                    "type": "Value",
+                    "id": "fde9672e-f40d-44d0-a2f9-89da42f301b3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ThrottleUpdate",
+                    "type": "Value",
+                    "id": "40a8d435-8f47-4897-9a5c-a69e516cb994",
+                    "expectedControlType": "Axis",
+                    "processors": "Invert",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RudderUpdate",
+                    "type": "Value",
+                    "id": "a69a3ade-cd46-43ef-b3ad-c33deb59abda",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LeftBrake",
+                    "type": "Value",
+                    "id": "2580c66b-531b-4430-ab70-881b483c3e78",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "RightBrake",
+                    "type": "Value",
+                    "id": "0a4c387e-f7ee-4ad2-beb1-6329ae9f9fc3",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ResetPress",
+                    "type": "Button",
+                    "id": "6f4eebd6-977d-4940-a0ea-06c34344717f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SetGround",
+                    "type": "Button",
+                    "id": "ad79c43c-e800-4a27-b48b-cea08dc0f598",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SetAir",
+                    "type": "Button",
+                    "id": "5c8f9ee8-3bba-4049-a79a-986a03a8d167",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "AISwitch",
+                    "type": "Button",
+                    "id": "80f587c4-544d-4bf0-ac8f-91656aabf57e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5f022cd2-2156-413d-9b5c-35eb4ef9ced8",
+                    "path": "<HID::Thustmaster Joystick - HOTAS Warthog>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "StickUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "985ae90c-31b0-4084-81b6-ab9ad2f3ce13",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "InvertVector2(invertX=false)",
+                    "groups": "",
+                    "action": "StickUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0a18eb72-82ab-44df-b347-f8ba47b03c68",
+                    "path": "<HID::Thrustmaster Throttle - HOTAS Warthog>/z",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "HOTAS and KM",
+                    "action": "ThrottleUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d5906c0-a2c0-4bf7-992c-f546c4db17ac",
+                    "path": "<HID::Thrustmaster T.16000M>/slider",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "",
+                    "action": "ThrottleUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4a73464a-0a56-4e23-a11c-07f6b4d332b6",
+                    "path": "<HID::Thustmaster Joystick - HOTAS Warthog>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "ResetPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ccb07429-5400-4bda-9da6-2c0e9a19f040",
+                    "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ResetPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6627ee36-ed45-47be-a9bf-845942eb5c4e",
+                    "path": "<ThrustmasterRudderHID>/Rudder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "RudderUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e073f19c-2a73-4d04-9ce6-af94aaf45d8a",
+                    "path": "<HID::Thrustmaster T.16000M>/rz",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RudderUpdate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8e1ce84-3b5b-40e5-844a-de22305bed43",
+                    "path": "<ThrustmasterRudderHID>/LeftBrake",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "LeftBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28a887fb-1496-4063-a696-f18ded0af2ac",
+                    "path": "<ThrustmasterRudderHID>/RightBrake",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "HOTAS and KM",
+                    "action": "RightBrake",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40fa9b6a-240e-49b5-9dff-4927cb771031",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetGround",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "133ccfe9-6af2-4c83-aab0-93c6cff6fc79",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SetAir",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ed7b7043-df59-4a4b-a39b-13719edd41f0",
+                    "path": "<HID::Thrustmaster T.16000M>/button2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AISwitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "VR",
+            "id": "ca9cb8ee-c2b5-42b7-9003-6ab678ea8d78",
+            "actions": [
+                {
+                    "name": "RelocateHeadPos",
+                    "type": "Button",
+                    "id": "537ed912-cb20-4d23-8279-ee36375a8fac",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ab773532-c52a-4f92-bf6a-aa5cdc49cec6",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "KeyboardMouseControls",
+                    "action": "RelocateHeadPos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "LAD_Development",
+            "id": "a66481dd-9a8f-4a70-ab52-18bc66d3f401",
+            "actions": [
+                {
+                    "name": "ScreenSpacePress",
+                    "type": "Button",
+                    "id": "96426612-17b7-421e-8bd8-aef48283bb30",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6d65a103-c786-470a-9cad-c9ec15b52492",
+                    "path": "<Mouse>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouseControls",
+                    "action": "ScreenSpacePress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "HOTAS and KM",
+            "bindingGroup": "HOTAS and KM",
+            "devices": [
+                {
+                    "devicePath": "<HID::Thustmaster Joystick - HOTAS Warthog>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<HID::Thrustmaster Throttle - HOTAS Warthog>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<ThrustmasterRudderHID>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<HID::Thrustmaster T.16000M>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "KeyboardMouseControls",
+            "bindingGroup": "KeyboardMouseControls",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<VirtualMouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

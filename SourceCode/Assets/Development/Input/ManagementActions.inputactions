@@ -1,0 +1,156 @@
+{
+    "name": "ManagementActions",
+    "maps": [
+        {
+            "name": "Keyboard",
+            "id": "22f7ffe5-3680-427b-9831-7f9a8c2e5bbe",
+            "actions": [
+                {
+                    "name": "SetPlaneOnGround",
+                    "type": "Button",
+                    "id": "ad35af2a-81cc-443d-bcd3-8c81670ac7b2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "SetPlaneInAir",
+                    "type": "Button",
+                    "id": "cf1f228f-010e-48f8-b029-955478251508",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b45dd1f9-e27e-40c1-ae11-bf16236286fd",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "SetPlaneOnGround",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2eccad77-b271-4808-9333-b2b33f6bd1d7",
+                    "path": "<Keyboard>/h",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "SetPlaneInAir",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Mouse",
+            "id": "332b05c1-2deb-42bf-a44c-31554e35eae0",
+            "actions": [
+                {
+                    "name": "Press",
+                    "type": "Button",
+                    "id": "b3cf172e-4ed1-499f-9c88-bc86c5519625",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Release",
+                    "type": "Button",
+                    "id": "250b9981-2128-460a-b65b-1e13c56b00a2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "8da92f56-d23e-4e66-b57d-a18af7f28b5f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b14d47d8-8db0-471f-8a2b-7dd196dbc53c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "755d108a-edb9-4c9c-a13a-ab2b74817bf3",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f0198948-82ff-4440-8c37-416db476b647",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec57be86-9081-4ca1-85b1-f71966193eac",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "Release",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "344dc440-e15f-43d0-8dab-ab0446f85742",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MainScheme",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "MainScheme",
+            "bindingGroup": "MainScheme",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<VirtualMouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
